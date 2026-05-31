@@ -1,16 +1,123 @@
-# React + Vite
+# 🗒️ Sticky Notes App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean, minimal sticky notes application built with React.js.
+Add color-coded notes, search through them instantly, and delete
+when done — all managed with React hooks.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+- ➕ Add notes with title and details
+- 🎨 6 color themes per note
+- 🔍 Real-time search across title and details
+- 🗑️ Delete any note instantly
+- 🕐 Timestamp on every note
+- 📝 Character count on title input
+- ✅ Toast notification on note creation
+- 💨 Smooth pop-in animation on new notes
+- 🚫 Validation — empty title blocked
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+| Technology   | Usage                          |
+|--------------|--------------------------------|
+| React.js     | UI & component architecture    |
+| React Hooks  | useState for all state logic   |
+| Tailwind CSS | Styling & layout               |
+| Vite         | Build tool & dev server        |
+| Lucide React | Icons (X button)               |
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/Siddhartha-sid/Sticky-Notes-App.git
+cd sticky-notes-app
+```
+
+### 2. Install dependencies
+```bash
+npm install
+```
+
+### 3. Start the development server
+```bash
+npm run dev
+```
+
+### 4. Open in browser
+```
+http://localhost:5173
+```
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── App.jsx          # Main component — all state and logic lives here
+├── main.jsx         # React entry point
+└── index.css        # Global styles
+```
+
+---
+
+## 🧠 How It Works
+
+```
+User fills title + details
+        ↓
+Picks a note color (6 options)
+        ↓
+Clicks "Add Note"
+        ↓
+Note pushed to notes[] array via useState
+        ↓
+Notes grid re-renders with new card
+        ↓
+User can search or delete any note
+```
+
+---
+
+## 💡 Key React Concepts Used
+
+- `useState` — manages notes array, form inputs, filter query
+- Controlled components — all inputs tied to state
+- Array immutability — spread operator for safe state updates
+- `.filter()` — live search without external library
+- Conditional rendering — empty state, search results
+
+---
+
+## 🔮 Future Improvements
+
+- [ ] LocalStorage persistence — notes survive page refresh
+- [ ] Edit existing notes
+- [ ] Drag and drop to reorder
+- [ ] Pin important notes to top
+- [ ] Dark mode toggle
+- [ ] Backend with Node.js + MongoDB for multi-device sync
+
+---
+
+## 👨‍💻 Author
+
+**Chalamala Siddhartha**  
+[GitHub](https://github.com/yourusername) ·
+[LinkedIn](https://linkedin.com/in/yourprofile) ·
+[Portfolio](https://your-portfolio.vercel.app)
+
+---
+
+## 📄 License
+
+MIT License — free to use and modify

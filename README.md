@@ -98,25 +98,6 @@ User can search or delete any note
 
 ---
 
-## 🔮 Future Improvements
-
-- [ ] LocalStorage persistence — notes survive page refresh
-- [ ] Edit existing notes
-- [ ] Drag and drop to reorder
-- [ ] Pin important notes to top
-- [ ] Dark mode toggle
-- [ ] Backend with Node.js + MongoDB for multi-device sync
-
----
-
-## 👨‍💻 Author
-
-**Chalamala Siddhartha**  
-[GitHub](https://github.com/yourusername) ·
-[LinkedIn](https://linkedin.com/in/yourprofile) ·
-[Portfolio](https://your-portfolio.vercel.app)
-
----
 
 ## 📄 License
 
